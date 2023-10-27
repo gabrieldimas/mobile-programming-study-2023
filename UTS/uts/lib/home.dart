@@ -11,6 +11,7 @@ class FigmaToCodeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
       ),
@@ -127,13 +128,51 @@ class Iphone13142 extends StatelessWidget {
                       width: 78,
                       height: 104,
                       padding: const EdgeInsets.all(10),
-                      child: Row(
+                      child: Column(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
+                          Icon(
+                            Icons.home,
+                            color: Colors.red,
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Text(
                             'Home',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              color: Colors.red,
+                              fontSize: 16,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w400,
+                              height: 0.08,
+                              letterSpacing: -0.50,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 78,
+                      height: 104,
+                      padding: const EdgeInsets.all(10),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.history,
+                            color: Colors.black,
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Text(
+                            'History',
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: Colors.black,
@@ -151,35 +190,18 @@ class Iphone13142 extends StatelessWidget {
                       width: 78,
                       height: 104,
                       padding: const EdgeInsets.all(10),
-                      child: Row(
+                      child: Column(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text(
-                            'History',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: Color(0xFFFF0000),
-                              fontSize: 16,
-                              fontFamily: 'Inter',
-                              fontWeight: FontWeight.w400,
-                              height: 0.08,
-                              letterSpacing: -0.50,
-                            ),
+                          Icon(
+                            Icons.qr_code_scanner,
+                            color: Colors.black,
                           ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      width: 78,
-                      height: 104,
-                      padding: const EdgeInsets.all(10),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
+                          SizedBox(
+                            height: 16,
+                          ),
                           Text(
                             'Pay',
                             textAlign: TextAlign.center,
@@ -199,11 +221,18 @@ class Iphone13142 extends StatelessWidget {
                       width: 78,
                       height: 104,
                       padding: const EdgeInsets.all(10),
-                      child: Row(
+                      child: Column(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
+                          Icon(
+                            Icons.mail,
+                            color: Colors.black,
+                          ),
+                          SizedBox(
+                            height: 16,
+                          ),
                           Text(
                             'Inbox',
                             textAlign: TextAlign.center,
