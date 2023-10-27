@@ -49,6 +49,7 @@ class Iphone13142 extends StatelessWidget {
                       width: 78,
                       height: 104,
                       padding: const EdgeInsets.all(10),
+                      color: Colors.red,
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -58,7 +59,7 @@ class Iphone13142 extends StatelessWidget {
                             'Link Aja',
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                              color: Colors.black,
+                              color: Colors.white,
                               fontSize: 16,
                               fontFamily: 'Inter',
                               fontWeight: FontWeight.w400,
@@ -85,17 +86,9 @@ class Iphone13142 extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Discount',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 16,
-                                    fontFamily: 'Inter',
-                                    fontWeight: FontWeight.w400,
-                                    height: 0.08,
-                                    letterSpacing: -0.50,
-                                  ),
+                                Icon(
+                                  Icons.discount_outlined,
+                                  color: Colors.black,
                                 ),
                               ],
                             ),
@@ -109,17 +102,9 @@ class Iphone13142 extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Text(
-                                  'Favorites',
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 16,
-                                    fontFamily: 'Inter',
-                                    fontWeight: FontWeight.w400,
-                                    height: 0.08,
-                                    letterSpacing: -0.50,
-                                  ),
+                                Icon(
+                                  Icons.favorite_border_outlined,
+                                  color: Colors.black,
                                 ),
                               ],
                             ),
