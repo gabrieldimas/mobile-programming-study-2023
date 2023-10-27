@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-class TransactionHistoryPage extends StatefulWidget {
-  @override
-  _TransactionHistoryPageState createState() => _TransactionHistoryPageState();
+void main() {
+  runApp(MyApp());
 }
 
-class _TransactionHistoryPageState extends State<TransactionHistoryPage> {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,14 +63,14 @@ class _TransactionHistoryPageState extends State<TransactionHistoryPage> {
         children: [
           // Icon
           Icon(
-            index == 0 ? Icons.pending : Icons.done,
-            color: index == 0 ? Colors.orange : Colors.green,
+            Icons.pending,
+            color: Colors.orange,
           ),
           // Text
           Text(
-            index == 0 ? 'Pending' : 'Done',
+            'Pending',
             style: TextStyle(
-              color: index == 0 ? Colors.orange : Colors.green,
+              color: Colors.orange,
             ),
           ),
         ],
