@@ -63,7 +63,7 @@ class Iphone13142 extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Text(
-                                  'Link\nAja',
+                                  'Link Aja',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     color: Colors.white,
@@ -94,17 +94,12 @@ class Iphone13142 extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
-                                      Text(
-                                        'Discount',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 16,
-                                          fontFamily: 'Inter',
-                                          fontWeight: FontWeight.w400,
-                                          height: 0.08,
-                                          letterSpacing: -0.50,
-                                        ),
+                                      Icon(
+                                        Icons.discount_outlined,
+                                        color: Colors.black,
+                                      ),
+                                      SizedBox(
+                                        height: 16,
                                       ),
                                     ],
                                   ),
@@ -119,17 +114,9 @@ class Iphone13142 extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
-                                      Text(
-                                        'Favorites',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: Colors.black,
-                                          fontSize: 16,
-                                          fontFamily: 'Inter',
-                                          fontWeight: FontWeight.w400,
-                                          height: 0.08,
-                                          letterSpacing: -0.50,
-                                        ),
+                                      Icon(
+                                        Icons.favorite_border_outlined,
+                                        color: Colors.black,
                                       ),
                                     ],
                                   ),
@@ -143,13 +130,21 @@ class Iphone13142 extends StatelessWidget {
                     const SizedBox(height: 16),
                     Container(
                       height: 158,
+                      width: 400,
                       padding: const EdgeInsets.all(24),
-                      decoration: BoxDecoration(color: Color(0xFFFF0000)),
+                      decoration: ShapeDecoration(
+                        color: Colors.red,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8)),
+                      ),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          SizedBox(
+                            height: 12,
+                          ),
                           Text(
                             'Hi, GABRIEL DIMAS WICAKSONO',
                             textAlign: TextAlign.center,
@@ -170,7 +165,7 @@ class Iphone13142 extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Container(
-                                  padding: const EdgeInsets.all(12),
+                                  padding: const EdgeInsets.all(16),
                                   decoration: ShapeDecoration(
                                     color: Colors.white,
                                     shape: RoundedRectangleBorder(
@@ -182,6 +177,9 @@ class Iphone13142 extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
+                                      SizedBox(
+                                        height: 4,
+                                      ),
                                       Text(
                                         'Your Balance',
                                         textAlign: TextAlign.center,
@@ -194,8 +192,12 @@ class Iphone13142 extends StatelessWidget {
                                           letterSpacing: -0.50,
                                         ),
                                       ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
                                       const SizedBox(height: 10),
                                       Container(
+                                        alignment: Alignment.center,
                                         child: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
@@ -216,16 +218,11 @@ class Iphone13142 extends StatelessWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 10),
-                                            Text(
-                                              'CTA',
-                                              textAlign: TextAlign.center,
-                                              style: TextStyle(
-                                                color: Color(0xFF252525),
-                                                fontSize: 16,
-                                                fontFamily: 'Inter',
-                                                fontWeight: FontWeight.w400,
-                                                height: 0.08,
-                                                letterSpacing: -0.50,
+                                            Container(
+                                              color: Colors.red,
+                                              child: Icon(
+                                                Icons.arrow_right,
+                                                color: Colors.white,
                                               ),
                                             ),
                                           ],
@@ -263,7 +260,6 @@ class Iphone13142 extends StatelessWidget {
                                       const SizedBox(height: 10),
                                       Container(
                                         child: Row(
-                                          mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           crossAxisAlignment:
