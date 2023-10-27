@@ -165,6 +165,7 @@ class Iphone13142 extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Container(
+                                  width: 124,
                                   padding: const EdgeInsets.all(16),
                                   decoration: ShapeDecoration(
                                     color: Colors.white,
@@ -233,7 +234,8 @@ class Iphone13142 extends StatelessWidget {
                                 ),
                                 const SizedBox(width: 16),
                                 Container(
-                                  padding: const EdgeInsets.all(12),
+                                  width: 124,
+                                  padding: const EdgeInsets.all(16),
                                   decoration: ShapeDecoration(
                                     color: Colors.white,
                                     shape: RoundedRectangleBorder(
@@ -245,8 +247,11 @@ class Iphone13142 extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
+                                      SizedBox(
+                                        height: 4,
+                                      ),
                                       Text(
-                                        'Your Balance',
+                                        'Bonus Balance',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                           color: Color(0x99252525),
@@ -257,16 +262,21 @@ class Iphone13142 extends StatelessWidget {
                                           letterSpacing: -0.50,
                                         ),
                                       ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
                                       const SizedBox(height: 10),
                                       Container(
+                                        alignment: Alignment.center,
                                         child: Row(
+                                          mainAxisSize: MainAxisSize.min,
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           children: [
                                             Text(
-                                              'Rp. 10.184',
+                                              'Rp. 0',
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
                                                 color: Color(0xFF252525),
@@ -278,16 +288,11 @@ class Iphone13142 extends StatelessWidget {
                                               ),
                                             ),
                                             const SizedBox(width: 10),
-                                            Text(
-                                              'CTA',
-                                              textAlign: TextAlign.center,
-                                              style: TextStyle(
-                                                color: Color(0xFF252525),
-                                                fontSize: 16,
-                                                fontFamily: 'Inter',
-                                                fontWeight: FontWeight.w400,
-                                                height: 0.08,
-                                                letterSpacing: -0.50,
+                                            Container(
+                                              color: Colors.red,
+                                              child: Icon(
+                                                Icons.arrow_right,
+                                                color: Colors.white,
                                               ),
                                             ),
                                           ],
