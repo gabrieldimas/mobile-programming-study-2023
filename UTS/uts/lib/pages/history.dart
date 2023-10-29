@@ -82,7 +82,7 @@ class _HistoryState extends State<History> with SingleTickerProviderStateMixin {
                   ),
                 ),
               ),
-              const Center(child: Text('Belum Tawu Wir'))
+              const Center(child: Text('lorem ipsum'))
             ],
           ),
         )
