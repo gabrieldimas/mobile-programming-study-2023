@@ -35,7 +35,7 @@ class _BannerSliderState extends State<BannerSlider> {
                   setState(() => activeIndex = index),
             ),
           ),
-          const SizedBox(height: 8),
+          SizedBox(height: 8),
           buildIndicator(),
         ],
       ),
@@ -43,7 +43,7 @@ class _BannerSliderState extends State<BannerSlider> {
   }
 
   Widget buildImage(String image, int index) => Container(
-        margin: const EdgeInsets.symmetric(horizontal: 8),
+        margin: EdgeInsets.symmetric(horizontal: 8),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(16),
           child: Image.asset(
