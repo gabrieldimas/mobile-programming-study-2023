@@ -7,7 +7,7 @@ void main() {
 
   list1 = [1, 2, 3];
   print(list1);
-  var list3 = [0, ...?list1];
+  var list3 = [0, ...list1];
   print(list3.length);
 
   var promoActive = true;

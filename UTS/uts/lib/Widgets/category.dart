@@ -6,8 +6,8 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(24, 0, 24, 0),
-      child: Column(children: [
+      margin: const EdgeInsets.fromLTRB(24, 0, 24, 0),
+      child: const Column(children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -45,17 +45,17 @@ class CategoryItem extends StatelessWidget {
   final String icon;
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 60,
       child: Column(children: [
         Image.asset(
           icon,
           height: 48,
         ),
-        SizedBox(height: 12),
+        const SizedBox(height: 12),
         Text(
           label,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.black87,
             fontSize: 12,
             fontWeight: FontWeight.w600,

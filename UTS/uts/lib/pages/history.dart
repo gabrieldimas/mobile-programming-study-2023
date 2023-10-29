@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class History extends StatefulWidget {
   const History({super.key});
@@ -13,7 +12,7 @@ class _HistoryState extends State<History> with SingleTickerProviderStateMixin {
 
   @override
   void initState() {
-    _tabController = new TabController(length: 2, vsync: this);
+    _tabController = TabController(length: 2, vsync: this);
     super.initState();
   }
 
@@ -28,8 +27,8 @@ class _HistoryState extends State<History> with SingleTickerProviderStateMixin {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.fromLTRB(24, 48, 24, 16),
-          child: Text(
+          margin: const EdgeInsets.fromLTRB(24, 48, 24, 16),
+          child: const Text(
             'Transaction History',
             style: TextStyle(
               fontSize: 16,
@@ -41,7 +40,7 @@ class _HistoryState extends State<History> with SingleTickerProviderStateMixin {
           child: TabBar(
             unselectedLabelColor: Colors.black,
             labelColor: Colors.black,
-            tabs: [
+            tabs: const [
               Tab(
                 text: 'Pending',
               ),
@@ -53,11 +52,12 @@ class _HistoryState extends State<History> with SingleTickerProviderStateMixin {
             indicatorSize: TabBarIndicatorSize.tab,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 24,
         ),
         Expanded(
           child: TabBarView(
+            controller: _tabController,
             children: [
               Container(
                 child: Center(
@@ -68,12 +68,12 @@ class _HistoryState extends State<History> with SingleTickerProviderStateMixin {
                         'assets/images/empty.png',
                         height: 200,
                       ),
-                      Text(
+                      const Text(
                         'all transactions is completed',
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.w600),
                       ),
-                      Text('Any Pending Transactions will appear here',
+                      const Text('Any Pending Transactions will appear here',
                           style: TextStyle(
                               fontSize: 14,
                               fontWeight: FontWeight.w400,
@@ -82,9 +82,8 @@ class _HistoryState extends State<History> with SingleTickerProviderStateMixin {
                   ),
                 ),
               ),
-              Center(child: Text('Belum Tawu Wir'))
+              const Center(child: Text('Belum Tawu Wir'))
             ],
-            controller: _tabController,
           ),
         )
       ],

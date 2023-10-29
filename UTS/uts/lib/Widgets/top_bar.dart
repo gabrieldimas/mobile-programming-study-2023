@@ -7,7 +7,7 @@ class TopBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 50,
-      margin: EdgeInsets.fromLTRB(24, 48, 24, 0),
+      margin: const EdgeInsets.fromLTRB(24, 48, 24, 0),
       child: Row(
         children: [
           Expanded(
@@ -20,8 +20,8 @@ class TopBar extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(right: 8),
-            padding: EdgeInsets.all(8),
+            margin: const EdgeInsets.only(right: 8),
+            padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
               color: Colors.white,
@@ -31,8 +31,8 @@ class TopBar extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(right: 8),
-            padding: EdgeInsets.all(8),
+            margin: const EdgeInsets.only(right: 8),
+            padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(4),
               color: Colors.white,

@@ -6,13 +6,13 @@ class UserCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(24, 0, 24, 0),
-      padding: EdgeInsets.all(16),
+      margin: const EdgeInsets.fromLTRB(24, 0, 24, 0),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
-        color: Color(0xffE82529),
+        color: const Color(0xffE82529),
       ),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
@@ -53,8 +53,8 @@ class SmallCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(8),
-      margin: EdgeInsets.only(right: 16),
+      padding: const EdgeInsets.all(8),
+      margin: const EdgeInsets.only(right: 16),
       height: 50,
       width: 120,
       decoration: BoxDecoration(
@@ -67,15 +67,15 @@ class SmallCard extends StatelessWidget {
         children: [
           Text(
             label,
-            style: TextStyle(fontSize: 10),
+            style: const TextStyle(fontSize: 10),
           ),
           Row(
             children: [
               Text(
                 'Rp $value',
-                style: TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
+                style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600),
               ),
-              SizedBox(width: 4),
+              const SizedBox(width: 4),
               Image.asset('assets/images/icon_red_arrow.png', height: 14)
             ],
           )

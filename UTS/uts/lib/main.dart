@@ -15,7 +15,7 @@ class Home extends StatelessWidget {
         scaffoldBackgroundColor: const Color.fromARGB(255, 18, 32, 47),
       ),
       home: Scaffold(
-        body: ListView(children: [
+        body: ListView(children: const [
           Iphone13142(),
         ]),
       ),
@@ -24,6 +24,8 @@ class Home extends StatelessWidget {
 }
 
 class Iphone13142 extends StatelessWidget {
+  const Iphone13142({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +34,7 @@ class Iphone13142 extends StatelessWidget {
           width: 390,
           height: 844,
           clipBehavior: Clip.antiAlias,
-          decoration: BoxDecoration(color: Colors.white),
+          decoration: const BoxDecoration(color: Colors.white),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -56,8 +58,8 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 80,
                             padding: const EdgeInsets.all(10),
-                            decoration: BoxDecoration(color: Color(0xFFFF0000)),
-                            child: Row(
+                            decoration: const BoxDecoration(color: Color(0xFFFF0000)),
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -88,7 +90,7 @@ class Iphone13142 extends StatelessWidget {
                                   width: 78,
                                   height: 104,
                                   padding: const EdgeInsets.all(10),
-                                  child: Row(
+                                  child: const Row(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment:
@@ -108,7 +110,7 @@ class Iphone13142 extends StatelessWidget {
                                   width: 78,
                                   height: 104,
                                   padding: const EdgeInsets.all(10),
-                                  child: Row(
+                                  child: const Row(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     crossAxisAlignment:
@@ -142,10 +144,10 @@ class Iphone13142 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             height: 12,
                           ),
-                          Text(
+                          const Text(
                             'Hi, GABRIEL DIMAS WICAKSONO',
                             textAlign: TextAlign.center,
                             style: TextStyle(
@@ -178,10 +180,10 @@ class Iphone13142 extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 4,
                                       ),
-                                      Text(
+                                      const Text(
                                         'Your Balance',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
@@ -193,7 +195,7 @@ class Iphone13142 extends StatelessWidget {
                                           letterSpacing: -0.50,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 4,
                                       ),
                                       const SizedBox(height: 10),
@@ -206,7 +208,7 @@ class Iphone13142 extends StatelessWidget {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           children: [
-                                            Text(
+                                            const Text(
                                               'Rp. 10.184',
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
@@ -221,7 +223,7 @@ class Iphone13142 extends StatelessWidget {
                                             const SizedBox(width: 10),
                                             Container(
                                               color: Colors.red,
-                                              child: Icon(
+                                              child: const Icon(
                                                 Icons.arrow_right,
                                                 color: Colors.white,
                                               ),
@@ -247,10 +249,10 @@ class Iphone13142 extends StatelessWidget {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 4,
                                       ),
-                                      Text(
+                                      const Text(
                                         'Bonus Balance',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
@@ -262,7 +264,7 @@ class Iphone13142 extends StatelessWidget {
                                           letterSpacing: -0.50,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 4,
                                       ),
                                       const SizedBox(height: 10),
@@ -275,7 +277,7 @@ class Iphone13142 extends StatelessWidget {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.center,
                                           children: [
-                                            Text(
+                                            const Text(
                                               'Rp. 0',
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
@@ -290,7 +292,7 @@ class Iphone13142 extends StatelessWidget {
                                             const SizedBox(width: 10),
                                             Container(
                                               color: Colors.red,
-                                              child: Icon(
+                                              child: const Icon(
                                                 Icons.arrow_right,
                                                 color: Colors.white,
                                               ),
@@ -318,7 +320,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -343,7 +345,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -368,7 +370,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -393,7 +395,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -427,7 +429,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -452,7 +454,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -477,7 +479,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -502,7 +504,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -536,7 +538,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -561,7 +563,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -586,7 +588,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -611,7 +613,7 @@ class Iphone13142 extends StatelessWidget {
                             width: 78,
                             height: 104,
                             padding: const EdgeInsets.all(10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
@@ -638,7 +640,7 @@ class Iphone13142 extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 102),
-              Container(
+              SizedBox(
                 width: double.infinity,
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
@@ -649,7 +651,7 @@ class Iphone13142 extends StatelessWidget {
                       width: 78,
                       height: 104,
                       padding: const EdgeInsets.all(10),
-                      child: Row(
+                      child: const Row(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -673,7 +675,7 @@ class Iphone13142 extends StatelessWidget {
                       width: 78,
                       height: 104,
                       padding: const EdgeInsets.all(10),
-                      child: Row(
+                      child: const Row(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -697,7 +699,7 @@ class Iphone13142 extends StatelessWidget {
                       width: 78,
                       height: 104,
                       padding: const EdgeInsets.all(10),
-                      child: Row(
+                      child: const Row(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -721,7 +723,7 @@ class Iphone13142 extends StatelessWidget {
                       width: 78,
                       height: 104,
                       padding: const EdgeInsets.all(10),
-                      child: Row(
+                      child: const Row(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -745,7 +747,7 @@ class Iphone13142 extends StatelessWidget {
                       width: 78,
                       height: 104,
                       padding: const EdgeInsets.all(10),
-                      child: Row(
+                      child: const Row(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,

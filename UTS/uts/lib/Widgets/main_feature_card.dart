@@ -12,15 +12,15 @@ class MainFeatureCard extends StatelessWidget {
             color: Colors.grey.withOpacity(0.3),
             spreadRadius: 1,
             blurRadius: 2,
-            offset: Offset(0, 1),
+            offset: const Offset(0, 1),
           ),
         ],
         borderRadius: BorderRadius.circular(8),
         color: Colors.white,
       ),
-      margin: EdgeInsets.fromLTRB(24, 0, 24, 0),
-      padding: EdgeInsets.only(top: 12, left: 16, right: 16, bottom: 12),
-      child: Row(
+      margin: const EdgeInsets.fromLTRB(24, 0, 24, 0),
+      padding: const EdgeInsets.only(top: 12, left: 16, right: 16, bottom: 12),
+      child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           MainFeatureItem(
@@ -55,7 +55,7 @@ class MainFeatureItem extends StatelessWidget {
   final String icon;
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 60,
       child: Column(
         children: [
@@ -65,10 +65,10 @@ class MainFeatureItem extends StatelessWidget {
               height: 24,
             ),
           ),
-          SizedBox(height: 4),
+          const SizedBox(height: 4),
           Text(
             label,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.black87,
               fontSize: 10,
               fontWeight: FontWeight.w500,
