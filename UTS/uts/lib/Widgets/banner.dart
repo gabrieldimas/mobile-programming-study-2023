@@ -56,7 +56,7 @@ class _BannerSliderState extends State<BannerSlider> {
   Widget buildIndicator() => AnimatedSmoothIndicator(
         activeIndex: activeIndex,
         count: images.length,
-        effect: SlideEffect(
+        effect: JumpingDotEffect(
           activeDotColor: Colors.red,
           dotColor: Colors.grey,
           dotWidth: 8,
