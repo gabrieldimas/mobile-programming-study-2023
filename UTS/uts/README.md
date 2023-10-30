@@ -4,9 +4,10 @@ Goals :
 Slicing from picture to flutter
 
 Output :
-![WhatsApp Image 2023-10-30 at 08 12 10](https://github.com/gabrieldimas/mobile-programming-study-2023/assets/93063866/53ffc1e9-ab1a-4967-9914-b7d16a088391)
-![WhatsApp Image 2023-10-30 at 08 12 11](https://github.com/gabrieldimas/mobile-programming-study-2023/assets/93063866/de444c18-f984-4c67-b8b2-84d06490162e)
+![image](https://github.com/gabrieldimas/mobile-programming-study-2023/assets/93063866/53ffc1e9-ab1a-4967-9914-b7d16a088391)
+![image](https://github.com/gabrieldimas/mobile-programming-study-2023/assets/93063866/de444c18-f984-4c67-b8b2-84d06490162e)
 
+img[alt=image] { max-width: 24em; }
 
 ## Getting Started
 
