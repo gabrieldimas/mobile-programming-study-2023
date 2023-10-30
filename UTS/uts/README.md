@@ -1,6 +1,12 @@
-# uts
+# Mobile Programming Mid-Term Test
 
-A new Flutter project.
+Goals : 
+Slicing from picture to flutter
+
+Output :
+
+<img src="https://github.com/gabrieldimas/mobile-programming-study-2023/assets/93063866/53ffc1e9-ab1a-4967-9914-b7d16a088391" width="128em">
+<img src="https://github.com/gabrieldimas/mobile-programming-study-2023/assets/93063866/de444c18-f984-4c67-b8b2-84d06490162e" width="128em">
 
 ## Getting Started
 
