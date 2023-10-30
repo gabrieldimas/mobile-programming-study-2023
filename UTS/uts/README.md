@@ -1,6 +1,7 @@
-# uts
+# Mobile Programming Mid-Term Test
 
-A new Flutter project.
+Goals : 
+Slicing from picture to flutter
 
 ## Getting Started
 
